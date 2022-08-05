@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+header h1 {
+	margin-left: 1%;
+	color: red;
+	font-size: 50px;
+	font-family: verdana;
+	font-style: oblique;
+	font-weight: bold;
+	animation-name: space;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes space {
+	from {
+		letter-spacing: 0px;
+	}
+	to {
+		letter-spacing: 9px;
+	}
+}
+
+header {
+	display: flex;
+	align-items: center;
+}
+
+header img {
+	margin: 2%;
+	border-radius: 50%;
+}
+
+
+body {
+	background-image: url("bg.gif");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+
+.contents h1 {
+	color: red;
+	font-size: 50px;
+	font-family: verdana;
+	font-style: oblique;
+	font-weight: bold;	
+	text-align: center;
+}
+
+
+.contents .cont1 {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.contents .cont2 {
+	display: flex;
+	align-items: center;
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+
+.contents .cont1 h1 {
+	margin-left: 20px;
+}
+
+
+.contents .cont2 h1 {
+	margin-left: 20px;
+}
+
+.wel {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;	
+	font-family: verdana;
+	font-style: oblique;
+	font-weight: bold;	
+	text-align: center;
+}
+
+#i1 {
+	animation-iteration-count: infinite;
+	animation-name: chg1;
+	animation-duration: 2s;
+}
+
+#i2 {
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	animation-name: chg2;
+}
+
+#i3 {
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: chg1;
+}
+
+#i4 {
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: chg2;
+}
+
+#i5 {
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: chg1;
+}
+#i6 {
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	animation-name: chg2;
+}
+#i7 {
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: chg1;
+}
+#i8 {
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	animation-name: chg2;
+}
+#i9 {
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-name: chg1;
+}
+
+@keyframes chg1 {
+	from {
+		color: red;
+	}
+	to {
+		color: black;
+	}
+}
+
+
+@keyframes chg2 {
+	from {
+		color: black;
+	}
+	to {
+		color: red;
+	}
+}
+
+
+a {
+	text-decoration: none;
+}

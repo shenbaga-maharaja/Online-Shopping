@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Online Shopping</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="./style1.css">
+
+</head>
+<body>
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>Crazy Shopping</h1>
+		<p>Login To Explore Our Collections</p>
+		</div>
+	</div>	
+	
+	<div class="right">
+		<h5>GO!</h5>
+		<div class="inputs">
+			<input type="text" id="name" placeholder="Username">
+			<br>
+			<input type="password" id="psw" placeholder="Password">
+		</div>
+			<br><br>			
+			<button style="color: red;font-size: 50px;text-decoration: none;" onclick="validate()"> Login </button>
+	</div>
+	
+</div>
+<script>
+	function validate() {
+		var f = 0;
+        let name , psw;
+       	name = document.getElementById("name").value;
+       	psw = document.getElementById("psw").value;
+
+       	let user_records=new Array();
+        user_records=JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):alert("Not Valid");
+
+       	for (var i = 0; i < user_records.length; i++) {
+       		if(user_records[i].name==name && user_records[i].psw==psw){
+	        	alert("Login Successfully");
+	        	f = 1;
+				window.location.href = 'index2.html';
+				break; 
+			}	
+		}
+		if(f==0)
+       		alert("Login Failure");
+       	}
+
+</script>
+</body>
+</html>
